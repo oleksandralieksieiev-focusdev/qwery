@@ -5,7 +5,8 @@ def is_safe_sql(sql: str) -> bool:
     if not s.startswith("select"):
         return False
     # disallow dangerous keywords
-    forbidden = ["insert ", "update ", "delete ", "drop ", "alter ", "create ", "truncate ", "grant ", "revoke ", "replace "]
+    forbidden = ["insert ", "update ", "delete ", "drop ", "alter ",
+                 "create ", "truncate ", "grant ", "revoke ", "replace "]
     if any(k in s for k in forbidden):
         return False
     return True
