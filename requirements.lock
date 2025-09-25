@@ -20,6 +20,8 @@ anyio==4.11.0
 attrs==25.3.0
     # via jsonschema
     # via referencing
+autopep8==2.3.2
+    # via qwery
 certifi==2025.8.3
     # via httpcore
     # via httpx
@@ -85,6 +87,8 @@ prompt-toolkit==3.0.52
     # via mcp-client-for-ollama
 psycopg2-binary==2.9.10
     # via qwery
+pycodestyle==2.14.0
+    # via autopep8
 pydantic==2.11.9
     # via langchain
     # via langchain-core
